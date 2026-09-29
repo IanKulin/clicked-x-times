@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clicked x times</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+</head>
+<body>
+  <button id="counter">You clicked 0 times</button>
+
+  <script>
+    let count = 0;
+
+    $('#counter').on('click', function() {
+      count++;
+      $(this).text(`You clicked ${count} times`);
+    });
+  </script>
+</body>
+</html>
